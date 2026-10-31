@@ -1,0 +1,469 @@
+{"bug_type":"210","timestamp":"2025-09-10 22:22:35.00 +0200","os_version":"macOS 15.6.1 (24G90)","roots_installed":0,"incident_id":"B1479F33-5D3B-4194-864D-847B66613068"}
+{
+  "build" : "macOS 15.6.1 (24G90)",
+  "product" : "Mac15,9",
+  "socId" : "6031",
+  "socRevision" : "12",
+  "incident" : "B1479F33-5D3B-4194-864D-847B66613068",
+  "crashReporterKey" : "C18DF009-6952-4FD2-5418-FA30ECBBAFA6",
+  "kernel" : "Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:55 PDT 2025; root:xnu-11417.140.69~1\/RELEASE_ARM64_T6031",
+  "date" : "2025-09-10 22:22:35.70 +0200",
+  "panicString" : "Attempting to forcibly halt cpu 0
+cpu 0 failed to halt with error -5: halt not supported for this configuration
+Attempting to forcibly halt cpu 1
+cpu 1 failed to halt with error -5: halt not supported for this configuration
+Attempting to forcibly halt cpu 2
+cpu 2 failed to halt with error -5: halt not supported for this configuration
+Attempting to forcibly halt cpu 3
+cpu 3 failed to halt with error -5: halt not supported for this configuration
+Attempting to forcibly halt cpu 4
+cpu 4 failed to halt with error -5: halt not supported for this configuration
+Attempting to forcibly halt cpu 5
+cpu 5 failed to halt with error -5: halt not supported for this configuration
+Attempting to forcibly halt cpu 6
+cpu 6 failed to halt with error -5: halt not supported for this configuration
+Attempting to forcibly halt cpu 7
+cpu 7 failed to halt with error -5: halt not supported for this configuration
+Attempting to forcibly halt cpu 8
+cpu 8 failed to halt with error -5: halt not supported for this configuration
+Attempting to forcibly halt cpu 10
+cpu 10 failed to halt with error -5: halt not supported for this configuration
+Attempting to forcibly halt cpu 11
+cpu 11 failed to halt with error -5: halt not supported for this configuration
+Attempting to forcibly halt cpu 12
+cpu 12 failed to halt with error -5: halt not supported for this configuration
+Attempting to forcibly halt cpu 13
+cpu 13 failed to halt with error -5: halt not supported for this configuration
+Attempting to forcibly halt cpu 14
+cpu 14 failed to halt with error -5: halt not supported for this configuration
+Attempting to forcibly halt cpu 15
+cpu 15 failed to halt with error -5: halt not supported for this configuration
+Unable to obtain state for cpu 0 with status -5: halt not supported for this configuration
+Unable to obtain state for cpu 1 with status -5: halt not supported for this configuration
+Unable to obtain state for cpu 2 with status -5: halt not supported for this configuration
+Unable to obtain state for cpu 3 with status -5: halt not supported for this configuration
+Unable to obtain state for cpu 4 with status -5: halt not supported for this configuration
+Unable to obtain state for cpu 5 with status -5: halt not supported for this configuration
+Unable to obtain state for cpu 6 with status -5: halt not supported for this configuration
+Unable to obtain state for cpu 7 with status -5: halt not supported for this configuration
+Unable to obtain state for cpu 8 with status -5: halt not supported for this configuration
+Unable to obtain state for cpu 10 with status -5: halt not supported for this configuration
+Unable to obtain state for cpu 11 with status -5: halt not supported for this configuration
+Unable to obtain state for cpu 12 with status -5: halt not supported for this configuration
+Unable to obtain state for cpu 13 with status -5: halt not supported for this configuration
+Unable to obtain state for cpu 14 with status -5: halt not supported for this configuration
+Unable to obtain state for cpu 15 with status -5: halt not supported for this configuration
+Debugger synchronization timed out; timeout 240000 nanoseconds
+panic(cpu 9 caller 0xfffffe002e6504a8): cpu9: LLC Bus error (Decode error) from cpu5: FAR=0x10e1a0000 LLC_ERR_STS\/ADR\/INF=0x80\/0xa343662b0f854480\/0x1000000001 addr=0x22b0f854480 cmd=0x1a(ACC_CIFL2C_CMD_RD_LD_M: request for load miss in E state w\/ intent to modify) err_sts: (LLC_ERR_STS\/ADR\/INF=0x80\/0xa343662b0f854480\/0x1000000001 LSU_ERR_STS=0 FED_ERR_STS=0 MMU_ERR_STS=0 DPC_ERR_STS=0) @generic_platform_error_handler.c:394
+Debugger message: panic
+Memory ID: 0xff
+OS release type: User
+OS version: 24G90
+Kernel version: Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:55 PDT 2025; root:xnu-11417.140.69~1\/RELEASE_ARM64_T6031
+Fileset Kernelcache UUID: 8AA69CD2038CD2BAE2ED364428F4DBEA
+Kernel UUID: 75A21406-D046-3232-AA3F-085335D5C848
+Boot session UUID: B1479F33-5D3B-4194-864D-847B66613068
+iBoot version: iBoot-11881.140.96
+iBoot Stage 2 version: iBoot-11881.140.96
+secure boot?: YES
+roots installed: 0
+Paniclog version: 14
+KernelCache slide: 0x0000000025ce8000
+KernelCache base:  0xfffffe002ccec000
+Kernel slide:      0x0000000025cf0000
+Kernel text base:  0xfffffe002ccf4000
+Kernel text exec slide: 0x000000002746c000
+Kernel text exec base:  0xfffffe002e470000
+mach_absolute_time: 0x4041057403
+Epoch Time:        sec       usec
+  Boot    : 0x68c08452 0x000b269d
+  Sleep   : 0x68c1c98a 0x000da18a
+  Wake    : 0x68c1c99c 0x000c9ad4
+  Calendar: 0x68c1ddf8 0x00056e4c
+
+Zone info:
+  Zone map: 0xfffffe1140000000 - 0xfffffe3740000000
+  . VM    : 0xfffffe1140000000 - 0xfffffe170c000000
+  . RO    : 0xfffffe170c000000 - 0xfffffe19a6000000
+  . GEN0  : 0xfffffe19a6000000 - 0xfffffe1f72000000
+  . GEN1  : 0xfffffe1f72000000 - 0xfffffe253e000000
+  . GEN2  : 0xfffffe253e000000 - 0xfffffe2b0a000000
+  . GEN3  : 0xfffffe2b0a000000 - 0xfffffe30d6000000
+  . DATA  : 0xfffffe30d6000000 - 0xfffffe3740000000
+  Metadata: 0xfffffe3840010000 - 0xfffffe3849810000
+  Bitmaps : 0xfffffe3849810000 - 0xfffffe38554d0000
+  Extra   : 0 - 0
+
+CORE 0 recently retired instr at 0xfffffe002e4d0f64
+CORE 1 recently retired instr at 0xfffffe002e63c7a0
+CORE 2 recently retired instr at 0xfffffe002e63c7a0
+CORE 3 recently retired instr at 0xfffffe002e63c7a0
+CORE 4 recently retired instr at 0xfffffe002e63c7a0
+CORE 5 recently retired instr at 0xfffffe002e63c7a0
+CORE 6 recently retired instr at 0xfffffe002e63c7a0
+CORE 7 recently retired instr at 0xfffffe002e63c7a0
+CORE 8 recently retired instr at 0xfffffe002e63c7a0
+CORE 9 recently retired instr at 0xfffffe002e63aefc
+CORE 10 recently retired instr at 0xfffffe002e63c7a0
+CORE 11 recently retired instr at 0xfffffe002e63c7a0
+CORE 12 recently retired instr at 0xfffffe002e63c7a0
+CORE 13 recently retired instr at 0xfffffe002e63c7a0
+CORE 14 recently retired instr at 0xfffffe002e63c7a0
+CORE 15 recently retired instr at 0xfffffe002e63c7a0
+TPIDRx_ELy = {1: 0xfffffe2b0cdb4698  0: 0x0000000000001009  0ro: 0x0000000203bc21a0 }
+CORE 0 PVH locks held: None
+CORE 1 PVH locks held: None
+CORE 2 PVH locks held: None
+CORE 3 PVH locks held: None
+CORE 4 PVH locks held: None
+CORE 5 PVH locks held: None
+CORE 6 PVH locks held: None
+CORE 7 PVH locks held: None
+CORE 8 PVH locks held: None
+CORE 9 PVH locks held: None
+CORE 10 PVH locks held: None
+CORE 11 PVH locks held: None
+CORE 12 PVH locks held: None
+CORE 13 PVH locks held: None
+CORE 14 PVH locks held: None
+CORE 15 PVH locks held: None
+CORE 0: PC=0xfffffe00315baea8, LR=0xfffffe00315d6ac0, FP=0xfffffe395659b570
+CORE 1: PC=0xfffffe002e50de84, LR=0xfffffe002e50de84, FP=0xfffffe3958d5fed0
+CORE 2: PC=0xfffffe002e50de84, LR=0xfffffe002e50de84, FP=0xfffffe39589e7ed0
+CORE 3: PC=0xfffffe002e50de84, LR=0xfffffe002e50de84, FP=0xfffffe3958dbfed0
+CORE 4: PC=0xfffffe002e50de84, LR=0xfffffe002e50de84, FP=0xfffffe3958d17ed0
+CORE 5: PC=0xfffffe002e50de84, LR=0xfffffe002e50de84, FP=0xfffffe3957507ed0
+CORE 6: PC=0xfffffe002e50de84, LR=0xfffffe002e50de84, FP=0xfffffe3956577ed0
+CORE 7: PC=0xfffffe002e50de84, LR=0xfffffe002e50de84, FP=0xfffffe39572ebed0
+CORE 8: PC=0xfffffe002e50de84, LR=0xfffffe002e50de84, FP=0xfffffe395647bed0
+CORE 9 is the one that panicked. Check the full backtrace for details.
+CORE 10: PC=0xfffffe002e50de84, LR=0xfffffe002e50de84, FP=0xfffffe39588ffed0
+CORE 11: PC=0xfffffe002e50de84, LR=0xfffffe002e50de84, FP=0xfffffe39572c7ed0
+CORE 12: PC=0xfffffe002e50de84, LR=0xfffffe002e50de84, FP=0xfffffe3958697ed0
+CORE 13: PC=0xfffffe002e50de84, LR=0xfffffe002e50de84, FP=0xfffffe3956d57ed0
+CORE 14: PC=0xfffffe002e50de84, LR=0xfffffe002e50de84, FP=0xfffffe3957267ed0
+CORE 15: PC=0xfffffe002e50de84, LR=0xfffffe002e50de84, FP=0xfffffe39585efed0
+ECC Corrections:1
+Compressor Info: 0% of compressed pages limit (OK) and 0% of segments limit (OK) with 0 swapfiles and OK swap space
+Panicked task 0xfffffe2b0ced4e38: 23891 pages, 29 threads: pid 578: WindowServer
+Panicked thread: 0xfffffe2b0cdb4698, backtrace: 0xfffffe39585825f0, tid: 4947
+\t\t  lr: 0xfffffe002e4d13d4  fp: 0xfffffe3958582680
+\t\t  lr: 0xfffffe002e632da0  fp: 0xfffffe39585826f0
+\t\t  lr: 0xfffffe002e631114  fp: 0xfffffe39585827b0
+\t\t  lr: 0xfffffe002e47b8b0  fp: 0xfffffe39585827c0
+\t\t  lr: 0xfffffe002e4d1710  fp: 0xfffffe3958582b90
+\t\t  lr: 0xfffffe002ed65290  fp: 0xfffffe3958582bb0
+\t\t  lr: 0xfffffe002e6504a8  fp: 0xfffffe3958582e50
+\t\t  lr: 0xfffffe002e634bdc  fp: 0xfffffe3958582e80
+\t\t  lr: 0xfffffe002e47ba3c  fp: 0xfffffe3958582e90
+\t\t  lr: 0xfffffe002e550a90  fp: 0xfffffe39585831f0
+\t\t  lr: 0xfffffe002e550a90  fp: 0xfffffe3958583230
+\t\t  lr: 0xfffffe002e5b2f50  fp: 0xfffffe3958583280
+\t\t  lr: 0xfffffe002e5b69e4  fp: 0xfffffe3958583350
+\t\t  lr: 0xfffffe002ec795dc  fp: 0xfffffe3958583470
+\t\t  lr: 0xfffffe002ec7dbdc  fp: 0xfffffe3958583510
+\t\t  lr: 0xfffffe002ec6a054  fp: 0xfffffe39585835c0
+\t\t  lr: 0xfffffe002ec6b248  fp: 0xfffffe3958583600
+\t\t  lr: 0xfffffe002edc8eec  fp: 0xfffffe3958583650
+\t\t  lr: 0xfffffe0030c36df8  fp: 0xfffffe39585836c0
+\t\t  lr: 0xfffffe0030c0dc10  fp: 0xfffffe3958583750
+\t\t  lr: 0xfffffe0030c20230  fp: 0xfffffe39585837f0
+\t\t  lr: 0xfffffe0030c020a8  fp: 0xfffffe3958583830
+\t\t  lr: 0xfffffe0030bff998  fp: 0xfffffe3958583880
+\t\t  lr: 0xfffffe002ecb92a0  fp: 0xfffffe39585838b0
+\t\t  lr: 0xfffffe002ecb95b0  fp: 0xfffffe3958583a40
+\t\t  lr: 0xfffffe002e5fc194  fp: 0xfffffe3958583b60
+\t\t  lr: 0xfffffe002e4d8d48  fp: 0xfffffe3958583c00
+\t\t  lr: 0xfffffe002e4aeed4  fp: 0xfffffe3958583c60
+\t\t  lr: 0xfffffe002e4c2868  fp: 0xfffffe3958583cb0
+\t\t  lr: 0xfffffe002e4c2c80  fp: 0xfffffe3958583da0
+\t\t  lr: 0xfffffe002e625bbc  fp: 0xfffffe3958583e50
+\t\t  lr: 0xfffffe002e6315a4  fp: 0xfffffe3958583f10
+\t\t  lr: 0xfffffe002e47b8b0  fp: 0xfffffe3958583f20
+\t\t  lr: 0x0000000195bedc34  fp: 0x0000000000000000
+      Kernel Extensions in backtrace:
+         com.apple.iokit.IOGPUFamily(104.6.2)[2981048F-F91D-3945-B0E3-41375EBE8B43]@0xfffffe0030bfa6d0->0xfffffe0030c39717
+            dependency: com.apple.driver.AppleMobileFileIntegrity(1.0.5)[5E2FC9EE-A3BF-336C-BAB6-8D9BC6F3213A]@0xfffffe002fb74500->0xfffffe002fba7b83
+            dependency: com.apple.iokit.IOGraphicsFamily(599)[7B5E816F-2B7B-3C35-BA2A-5EDCEE2F8FFC]@0xfffffe0030c42300->0xfffffe0030c7a1f3
+            dependency: com.apple.iokit.IOPCIFamily(2.9)[82713358-3800-3009-B270-4C358FCA03A8]@0xfffffe0030e71720->0xfffffe0030ea2e57
+            dependency: com.apple.iokit.IOReportFamily(47)[8A628F6A-D71D-3DE0-A216-E501A69E3F2D]@0xfffffe0030eabe90->0xfffffe0030eaed47
+            dependency: com.apple.iokit.IOSurface(372.5.2)[14730A41-2BF6-307A-A733-C4AF3CF908CE]@0xfffffe0030f7eef0->0xfffffe0030fae167
+         com.apple.AGXG15C(329.2)[B3F5FC0A-9E11-3C6B-9BC3-0F5DDC43301B]@0xfffffe002edba990->0xfffffe002ee831c3
+            dependency: com.apple.driver.AppleARMPlatform(1.0.2)[4FF86585-4BF5-3A47-BE67-0FDC26894919]@0xfffffe002ef26630->0xfffffe002ef7c64f
+            dependency: com.apple.driver.AppleMobileFileIntegrity(1.0.5)[5E2FC9EE-A3BF-336C-BAB6-8D9BC6F3213A]@0xfffffe002fb74500->0xfffffe002fba7b83
+            dependency: com.apple.driver.RTBuddy(1.0.0)[16B1A333-3DC6-3837-AA26-5620B6BEBCF3]@0xfffffe003154efe0->0xfffffe0031592c33
+            dependency: com.apple.iokit.CoreAnalyticsFamily(1)[BC0C6D07-0A95-30C9-9A5B-EDC345DF9867]@0xfffffe003032bfe0->0xfffffe0030335523
+            dependency: com.apple.iokit.IOGPUFamily(104.6.2)[2981048F-F91D-3945-B0E3-41375EBE8B43]@0xfffffe0030bfa6d0->0xfffffe0030c39717
+            dependency: com.apple.iokit.IOReportFamily(47)[8A628F6A-D71D-3DE0-A216-E501A69E3F2D]@0xfffffe0030eabe90->0xfffffe0030eaed47
+            dependency: com.apple.iokit.IOSurface(372.5.2)[14730A41-2BF6-307A-A733-C4AF3CF908CE]@0xfffffe0030f7eef0->0xfffffe0030fae167
+            dependency: com.apple.kec.Libm(1)[170C8EA4-0FDA-3475-851F-6510349F7E3B]@0xfffffe00315379c0->0xfffffe003153b2f7
+
+last started kext at 1350771502: com.apple.filesystems.autofs\t3.0 (addr 0xfffffe002d89e840, size 5927)
+loaded kexts:
+com.apple.filesystems.autofs\t3.0
+com.apple.driver.usb.realtek8153patcher\t5.0.0
+com.apple.driver.usb.AppleUSBHostBillboardDevice\t1.0
+com.apple.driver.AppleTopCaseHIDEventDriver\t8420.1
+com.apple.driver.AppleBiometricServices\t1
+com.apple.driver.CoreKDL\t1
+com.apple.driver.DiskImages.ReadWriteDiskImage\t493.0.0
+com.apple.driver.DiskImages.UDIFDiskImage\t493.0.0
+com.apple.driver.DiskImages.RAMBackingStore\t493.0.0
+com.apple.driver.DiskImages.FileBackingStore\t493.0.0
+com.apple.driver.AppleThunderboltIP\t4.0.3
+com.apple.driver.AppleSmartBatteryManager\t161.0.0
+com.apple.driver.AppleUSBDeviceNCM\t5.0.0
+com.apple.driver.SEPHibernation\t1
+com.apple.driver.AppleFileSystemDriver\t3.0.1
+com.apple.nke.l2tp\t1.9
+com.apple.filesystems.tmpfs\t1
+com.apple.driver.ApplePMP\t1
+com.apple.driver.AppleALSColorSensor\t1.0.0d1
+com.apple.driver.ApplePMPFirmware\t1
+com.apple.filesystems.nfs\t1
+com.apple.filesystems.lifs\t1
+com.apple.filesystems.apfs\t2332.140.13
+com.apple.IOTextEncryptionFamily\t1.0.0
+com.apple.filesystems.hfs.kext\t683.120.3
+com.apple.security.BootPolicy\t1
+com.apple.BootCache\t40
+com.apple.AppleFSCompression.AppleFSCompressionTypeZlib\t1.0.0
+com.apple.AppleFSCompression.AppleFSCompressionTypeDataless\t1.0.0d1
+com.apple.driver.AppleAOPVoiceTrigger\t440.4
+com.apple.driver.AppleAVD\t865
+com.apple.AGXG15C\t329.2
+com.apple.AppleEmbeddedSimpleSPINORFlasher\t1
+com.apple.driver.AppleSamsungSerial\t1.0.0d1
+com.apple.driver.AppleSerialShim\t1
+com.apple.driver.AppleQSPIMC\t1
+com.apple.driver.AppleProResHW\t475.10
+com.apple.driver.usb.AppleSynopsysUSB40XHCI\t1
+com.apple.driver.AppleMobileDispT603C-DCP\t140.0
+com.apple.driver.AppleSDXC\t3.5.3
+com.apple.driver.AppleM68Buttons\t1.0.0d1
+com.apple.driver.AppleJPEGDriver\t7.6.9
+com.apple.driver.AppleAVE2\t803.73.1
+com.apple.driver.AppleSmartIO2\t1
+com.apple.driver.AppleTypeCRetimer\t1.0.0
+com.apple.driver.AppleCS42L84Audio\t840.26
+com.apple.driver.AppleSN012776Amp\t840.26
+com.apple.driver.AppleT6031CLPC\t1
+com.apple.driver.AppleT6031SOCTuner\t1
+com.apple.driver.AppleDPDisplayTCON\t1
+com.apple.driver.AppleS5L8960XNCO\t1
+com.apple.driver.AppleEventLogHandler\t1
+com.apple.driver.AppleT6031PMGR\t1
+com.apple.driver.AppleS8000AES\t1
+com.apple.driver.AppleS8000DWI\t1.0.0d1
+com.apple.driver.AppleInterruptControllerV3\t1.0.0d1
+com.apple.driver.AppleBluetoothModule\t1
+com.apple.driver.AppleBCMWLANBusInterfacePCIe\t1
+com.apple.driver.AppleS5L8920XPWM\t1.0.0d1
+com.apple.driver.AudioDMAController-T603x\t460.8
+com.apple.driver.AppleSPIMC\t1
+com.apple.driver.AppleS5L8940XI2C\t1.0.0d2
+com.apple.driver.AppleT8110DART\t1
+com.apple.driver.AppleH15MCD\t1
+com.apple.iokit.IOUserEthernet\t1.0.1
+com.apple.driver.usb.AppleUSBUserHCI\t1
+com.apple.iokit.IOKitRegistryCompatibility\t1
+com.apple.iokit.EndpointSecurity\t1
+com.apple.driver.AppleDiskImages2\t385.140.4
+com.apple.AppleSystemPolicy\t2.0.0
+com.apple.kec.InvalidateHmac\t1
+com.apple.kec.AppleEncryptedArchive\t1
+com.apple.driver.driverkit.serial\t6.0.0
+com.apple.driver.usb.cdc.ncm\t5.0.0
+com.apple.driver.usb.cdc.ecm\t5.0.0
+com.apple.driver.usb.cdc.acm\t5.0.0
+com.apple.driver.usb.serial\t6.0.0
+com.apple.driver.usb.IOUSBHostHIDDevice\t1.2
+com.apple.driver.usb.cdc\t5.0.0
+com.apple.driver.AppleUSBAudio\t750.4
+com.apple.iokit.IOAudioFamily\t600.2
+com.apple.vecLib.kext\t1.2.0
+com.apple.driver.AppleHSBluetoothDriver\t8420.1
+com.apple.driver.IOBluetoothHIDDriver\t9.0.0
+com.apple.driver.AppleHIDKeyboard\t8010.1
+com.apple.driver.AppleActuatorDriver\t8440.1
+com.apple.driver.AppleMultitouchDriver\t8440.1
+com.apple.driver.AppleThunderboltPCIUpAdapter\t4.1.1
+com.apple.driver.AppleThunderboltUSBUpAdapter\t1.0.4
+com.apple.driver.AppleThunderboltDPOutAdapter\t8.5.1
+com.apple.driver.AppleMesaSEPDriver\t100.99
+com.apple.iokit.IOBiometricFamily\t1
+com.apple.iokit.IOAVBFamily\t1320.3
+com.apple.driver.DiskImages.KernelBacked\t493.0.0
+com.apple.driver.AppleUVDMDriver\t1.0.0
+com.apple.driver.AppleUVDM\t1.0.0
+com.apple.driver.AppleSEPHDCPManager\t1.0.1
+com.apple.driver.AppleConvergedIPCOLYBTControl\t1
+com.apple.driver.AppleConvergedPCI\t1
+com.apple.driver.AppleBluetoothDebug\t1
+com.apple.driver.AppleBTM\t1.0.1
+com.apple.driver.AppleXsanScheme\t3
+com.apple.driver.usb.networking\t5.0.0
+com.apple.driver.AppleThunderboltUSBDownAdapter\t1.0.4
+com.apple.driver.AppleThunderboltPCIDownAdapter\t4.1.1
+com.apple.driver.AppleThunderboltDPInAdapter\t8.5.1
+com.apple.driver.AppleThunderboltDPAdapterFamily\t8.5.1
+com.apple.driver.AppleTrustedAccessory\t1
+com.apple.iokit.AppleSEPGenericTransfer\t1
+com.apple.nke.ppp\t1.9
+com.apple.iokit.IONVMeFamily\t2.1.0
+com.apple.driver.AppleBSDKextStarter\t3
+com.apple.kext.triggers\t1.0
+com.apple.driver.IOHIDPowerSource\t1
+com.apple.driver.AppleCallbackPowerSource\t1
+com.apple.filesystems.hfs.encodings.kext\t1
+com.apple.driver.AppleSyntheticGameController\t12.6.1
+com.apple.driver.AppleStockholmControl\t1.0.0
+com.apple.AGXFirmwareKextG15CRTBuddy\t1
+com.apple.AGXFirmwareKextRTBuddy64\t329.2
+com.apple.driver.AppleAOPAudio\t440.12
+com.apple.driver.AppleH11ANEInterface\t8.600.2
+com.apple.driver.AppleSART\t1
+com.apple.driver.AppleHPM\t3.4.4
+com.apple.driver.AppleDiagnosticDataAccessReadOnly\t1.0.0
+com.apple.driver.AppleNANDConfigAccess\t1.0.0
+com.apple.iokit.IOGPUFamily\t104.6.2
+com.apple.driver.AppleSPMIPMU\t1.0.1
+com.apple.driver.AppleDialogPMU\t1.0.1
+com.apple.driver.AppleSPMI\t1.0.1
+com.apple.driver.ApplePTD\t1.0.0
+com.apple.plugin.IOgPTPPlugin\t1340.12
+com.apple.driver.AppleUSBXDCIARM\t1.0
+com.apple.driver.AppleUSBXDCI\t1.0
+com.apple.iokit.IOUSBDeviceFamily\t2.0.0
+com.apple.driver.usb.AppleSynopsysUSBXHCI\t1
+com.apple.driver.usb.AppleUSBXHCI\t1.2
+com.apple.driver.AppleEmbeddedUSBHost\t1
+com.apple.driver.usb.AppleUSBHub\t1.2
+com.apple.driver.usb.AppleUSBHostCompositeDevice\t1.2
+com.apple.driver.AppleT8122TypeCPhy\t1
+com.apple.driver.AppleDCPDPTXProxy\t1.0.0
+com.apple.driver.DCPDPFamilyProxy\t1
+com.apple.driver.AppleDisplayManager\t1.0
+com.apple.iokit.IOMobileGraphicsFamily-DCP\t343.0.0
+com.apple.driver.AppleDCP\t1
+com.apple.iokit.IOMobileGraphicsFamily\t343.0.0
+com.apple.driver.AppleM2ScalerCSCDriver\t265.0.0
+com.apple.driver.DCPAVFamilyProxy\t1
+com.apple.driver.AppleMobileApNonce\t1
+com.apple.driver.AppleCSEmbeddedAudio\t840.26
+com.apple.driver.AppleEmbeddedAudio\t840.26
+com.apple.iokit.AppleARMIISAudio\t440.17
+com.apple.driver.IISAudioIsolatedStreamECProxy\t440.17
+com.apple.driver.ExclavesAudioKext\t240.34
+com.apple.driver.ApplePassthroughPPM\t3.0
+com.apple.driver.AppleHIDTransportFIFO\t8440.2
+com.apple.driver.AppleHIDTransport\t8440.2
+com.apple.driver.AppleSPU\t1
+com.apple.driver.AppleInputDeviceSupport\t8440.2
+com.apple.driver.AppleFirmwareKit\t1
+com.apple.driver.ApplePMGR\t1
+com.apple.driver.AppleARMWatchdogTimer\t1
+com.apple.driver.AppleDisplayCrossbar\t1.0.0
+com.apple.iokit.IODisplayPortFamily\t1.0.0
+com.apple.driver.AppleTypeCPhy\t1
+com.apple.driver.AppleMultiFunctionManager\t1
+com.apple.driver.AppleBluetoothDebugService\t1
+com.apple.driver.AppleBCMWLANCore\t1.0.0
+com.apple.iokit.IO80211Family\t1200.13.1
+com.apple.driver.IOImageLoader\t1.0.0
+com.apple.driver.AppleOLYHAL\t1
+com.apple.driver.corecapture\t1.0.4
+com.apple.driver.AppleA7IOP-MXWrap-v1\t1.0.2
+com.apple.driver.AppleThunderboltNHI\t7.2.81
+com.apple.driver.AppleT8122PCIeC\t1
+com.apple.iokit.IOThunderboltFamily\t9.3.3
+com.apple.iokit.IOPortFamily\t1.0
+com.apple.driver.AppleT6031PCIe\t1
+com.apple.driver.AppleT6020PCIePIODMA\t1
+com.apple.driver.AppleEmbeddedPCIE\t1
+com.apple.driver.ApplePIODMA\t1
+com.apple.driver.AppleMCA2-T603x\t940.3
+com.apple.driver.AppleEmbeddedAudioLibs\t420.3
+com.apple.driver.AppleFirmwareUpdateKext\t1
+com.apple.driver.AppleH13CameraInterface\t9.600.0
+com.apple.driver.AppleGPIOICController\t1.0.2
+com.apple.driver.AppleA7IOP-ASCWrap-v6\t1.0.2
+com.apple.driver.AppleDockChannel\t1
+com.apple.driver.AppleEverestErrorHandler\t1
+com.apple.driver.usb.AppleUSBHostPacketFilter\t1.0
+com.apple.iokit.IOTimeSyncFamily\t1340.12
+com.apple.driver.DiskImages\t493.0.0
+com.apple.iokit.IOGraphicsFamily\t599
+com.apple.iokit.IOBluetoothFamily\t9.0.0
+com.apple.driver.AppleUIO\t1
+com.apple.driver.AppleT6031ANEHAL\t8.600.3
+com.apple.driver.AppleSSE\t1.0
+com.apple.driver.AppleSEPKeyStore\t2
+com.apple.driver.AppleUSBTDM\t556
+com.apple.iokit.IOUSBMassStorageDriver\t259.100.1
+com.apple.iokit.IOPCIFamily\t2.9
+com.apple.iokit.IOUSBHostFamily\t1.2
+com.apple.driver.AppleUSBHostMergeProperties\t1.2
+com.apple.driver.usb.AppleUSBCommon\t1.0
+com.apple.driver.AppleSMC\t3.1.9
+com.apple.driver.RTBuddy\t1.0.0
+com.apple.driver.AppleEmbeddedTempSensor\t1.0.0
+com.apple.driver.AppleARMPMU\t1.0
+com.apple.iokit.IOAccessoryManager\t1.0.0
+com.apple.driver.AppleOnboardSerial\t1.0
+com.apple.iokit.IOSerialFamily\t11
+com.apple.iokit.IOSCSIBlockCommandsDevice\t500.120.2
+com.apple.iokit.IOSCSIArchitectureModelFamily\t500.120.2
+com.apple.driver.AppleRSMChannel\t1
+com.apple.iokit.IORSMFamily\t1
+com.apple.driver.AppleLockdownMode\t1
+com.apple.driver.AppleIPAppender\t1.0
+com.apple.iokit.IOSkywalkFamily\t1.0
+com.apple.driver.mDNSOffloadUserClient\t1.0.1b8
+com.apple.iokit.IONetworkingFamily\t3.4
+com.apple.driver.AppleFDEKeyStore\t28.30
+com.apple.driver.AppleEffaceableStorage\t1.0
+com.apple.driver.AppleCredentialManager\t1.0
+com.apple.driver.AppleSEPManager\t1.0.1
+com.apple.driver.IODARTFamily\t1
+com.apple.driver.AppleA7IOP\t1.0.2
+com.apple.driver.IOSlaveProcessor\t1
+com.apple.driver.AppleBiometricSensor\t2
+com.apple.iokit.IOHIDFamily\t2.0.0
+com.apple.driver.AppleANELoadBalancer\t8.600.2
+com.apple.AUC\t1.0
+com.apple.iokit.IOSurface\t372.5.2
+com.apple.iokit.IOAVFamily\t1.0.0
+com.apple.iokit.IOHDCPFamily\t1.0.0
+com.apple.iokit.IOCECFamily\t1
+com.apple.iokit.IOAudio2Family\t1.0
+com.apple.driver.AppleIISController\t440.2
+com.apple.driver.AppleAudioClockLibs\t420.3
+com.apple.driver.FairPlayIOKit\t72.13.0
+com.apple.driver.AppleARMPlatform\t1.0.2
+com.apple.iokit.IOSlowAdaptiveClockingFamily\t1.0.0
+com.apple.iokit.IOReportFamily\t47
+com.apple.security.quarantine\t4
+com.apple.security.sandbox\t300.0
+com.apple.iokit.IOStorageFamily\t2.1
+com.apple.kext.AppleMatch\t1.0.0d1
+com.apple.driver.AppleMobileFileIntegrity\t1.0.5
+com.apple.iokit.CoreAnalyticsFamily\t1
+com.apple.security.AppleImage4\t7.0.0
+com.apple.kext.CoreTrust\t1
+com.apple.iokit.IOCryptoAcceleratorFamily\t1.0.1
+com.apple.kec.pthread\t1
+com.apple.kec.Libm\t1
+com.apple.kec.Compression\t1.0
+com.apple.kec.corecrypto\t14.0
+
+",
+  "panicFlags" : "0x4",
+  "codeSigningMonitor" : 1,
+  "bug_type" : "210",
+  "otherString" : "!! debugger synchronization failed, no stackshot !!
+",
+  "PanicLogUtilizationMetrics" : {"PercentUsed":1,"PanicRegionSizeInBytes":1605632,"UsedSizeInBytes":22161,"StackshotLengthInBytes":0,"OtherLogLengthInBytes":52,"PanicLogLengthInBytes":21932},
+  "binaryImages" : [],
+  "notes" : ["Source: (null)","missing stackshot buffer or size","missing stackshot buffer or size"]
+}
